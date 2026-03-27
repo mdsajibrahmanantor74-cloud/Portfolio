@@ -145,3 +145,36 @@
 }
 
 /* Professional Experience Design End Hear */
+
+/* Achievement-Contact Design Start Hear  */
+.achievement{
+    padding-right: 50px;
+}
+.contact button{
+    width: 150px;
+}
+
+.contact-links{
+    position: relative;
+}
+
+.media-buttons{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 50%;
+}
+
+/* Achievement-Contact Design End Hear  */
+
+/* Footer Design Start Hear  */
+.footer-menu{
+    margin-top: 12px;
+
+}
+.footer-menu a{
+display: inline;
+margin: 10px;
+}
+/* Footer Design End Hear  */
