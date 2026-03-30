@@ -3,6 +3,9 @@
   font-family: "Satisfy", cursive;
   font-family: "Montserrat", sans-serif; */
 
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     box-sizing: border-box;
@@ -244,6 +247,11 @@ a {
 
 }
 
+.achievement ol li p a:hover {
+    color: grey;
+    text-decoration: underlineF;
+}
+
 /* Skills Design Start from Hear  */
 .skills-container {
     padding: 0px;
@@ -253,9 +261,15 @@ a {
 .skills-container li {
     list-style: none;
     font-weight: bolder;
-    margin: 40px ;
+    margin: 40px;
     position: relative;
     text-transform: uppercase;
+}
+
+.skills-container li a {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .skills-container li::before {
@@ -289,11 +303,210 @@ a {
 }
 
 /* Animation name  */
+.skills-container li.dm::after {
+    animation-name: dm;
+}
+
+.skills-container li.wd::after {
+    animation-name: wd;
+}
+
+.skills-container li.mso::after {
+    animation-name: mso;
+}
+
+.skills-container li.gd::after {
+    animation-name: gd;
+}
+
+.skills-container li.eca::after {
+    animation-name: eca;
+}
+
+/* .skills-container li.node::after {
+    animation-name: node;
+} */
+
+/* Animation Keyframes */
+@keyframes dm {
+    to {
+        width: 70%;
+
+    }
+}
+
+@keyframes wd {
+    to {
+        width: 30%;
+
+    }
+}
+
+@keyframes mso {
+    to {
+        width: 90%;
+
+    }
+}
+
+@keyframes gd {
+    to {
+        width: 60%;
+
+    }
+}
+
+@keyframes eca {
+    to {
+        width: 55%;
+
+    }
+}
+
+/* @keyframes node {
+    to {
+        width: 10%;
+
+    }
+} */
+
+/* Web development skill design start here  */
+
+
+/* Backend start*/
+
+/* Individual skills */
+.skills-container li.node::after {
+    animation-name: node;
+}
+
+.skills-container li.django::after {
+    animation-name: django;
+}
+
+.skills-container li.php::after {
+    animation-name: php;
+}
+
+.skills-container li.jsp::after {
+    animation-name: jsp;
+}
+
+.skills-container li.python::after {
+    animation-name: python;
+}
+
+
+/* Animations */
+@keyframes node {
+    to {
+        width: 10%;
+        background-color: blue;
+    }
+}
+
+@keyframes django {
+    to {
+        width: 10%;
+        background-color: #092E20;
+    }
+}
+
+@keyframes php {
+    to {
+        width: 10%;
+        background-color: #474A8A;
+    }
+}
+
+@keyframes jsp {
+    to {
+        width: 10%;
+        background-color: #60AF02;
+    }
+}
+
+@keyframes python {
+    to {
+        width: 10%;
+        background-color: #4584B6;
+    }
+}
+
+
+/* Backend end  */
+
+/* Database start*/
+
+/* Individual skills */
+.skills-container li.mysql::after {
+    animation-name: mysql;
+}
+
+.skills-container li.oracle::after {
+    animation-name: oracle;
+}
+
+.skills-container li.mongodb::after {
+    animation-name: mongodb;
+}
+
+.skills-container li.api::after {
+    animation-name: api;
+}
+
+.skills-container li.ws::after {
+    animation-name: ws;
+}
+
+
+/* Animations */
+@keyframes mysql {
+    to {
+        width: 30%;
+        background-color: #00758F;
+    }
+}
+
+@keyframes oracle {
+    to {
+        width: 10%;
+        background-color: #F80102;
+    }
+}
+
+@keyframes mongodb {
+    to {
+        width: 10%;
+        background-color: #4DB33D;
+    }
+}
+
+@keyframes api {
+    to {
+        width: 10%;
+        background-color: #000000;
+    }
+}
+
+@keyframes ws {
+    to {
+        width: 10%;
+        background-color: #0073B7;
+    }
+}
+
+
+/* Database end  */
+
+/* frontend start*/
+
+/* Individual skills */
 .skills-container li.html::after {
     animation-name: html;
 }
 
-.skills-container li.css::after {
+.skills-container li.cs::after {
     animation-name: css;
 }
 
@@ -309,57 +522,50 @@ a {
     animation-name: react;
 }
 
-.skills-container li.node::after {
-    animation-name: node;
-}
 
-/* Animation Keyframes */
+/* Animations */
 @keyframes html {
     to {
         width: 90%;
-
+        background-color: #ffa500;
     }
 }
 
 @keyframes css {
     to {
         width: 90%;
-
+        background-color: #663399;
     }
 }
 
 @keyframes js {
     to {
-        width: 20%;
-
+        width: 10%;
+        background-color: #f7df1e;
     }
 }
 
 @keyframes bs {
     to {
-        width: 60%;
-
+        width: 10%;
+        background-color: #602c50;
     }
 }
 
 @keyframes react {
     to {
         width: 10%;
-
-    }
-}
-
-@keyframes node {
-    to {
-        width: 10%;
-
+        background-color: #61dbfb;
     }
 }
 
 
+/* frontend end  */
 
+/* Web development skill design End here  */
 
 /* Skills Design End Hear  */
+
 
 .professional-experience::after {
     content: " ";
@@ -370,16 +576,19 @@ a {
 /* Professional Experience Design End Hear  */
 
 /* Achievement-Contact Design Start Hear  */
-.achievement-contact{
+.achievement-contact {
     padding: 1% 7%;
     background-color: #39a4ac;
     color: white;
 }
+
 /* Form Design here  */
-.contact{
+.contact {
     text-align: center;
 }
-.contact input, textarea{
+
+.contact input,
+textarea {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -390,7 +599,7 @@ a {
 
 }
 
-.contact button{
+.contact button {
     border: none;
     border-radius: 12px;
     background-color: #052d2f;
@@ -403,53 +612,60 @@ a {
 }
 
 /* Icon Design here  */
-.contact-links{
+.contact-links {
     text-align: center;
 }
 
-.media-buttons .btn{
-     border: none;
-     border-radius: 25px;
-     cursor: pointer;
-     font-size: 32px;
-     padding: 5px;
-     margin: 10px;
-     width: 50px;
-     background-color: white;
+.media-buttons .btn {
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    background-color: white;
+    transition: 0.4s;
 }
-.btn:hover{
-    border: gray;
+
+.btn:hover {
+    background-color: skyblue;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px black;
 }
 
 
-.achievement-contact::after{
+.achievement-contact::after {
     content: " ";
     display: table;
     clear: both;
 }
+
 /* Achievement-Contact Design End Hear  */
 
 /* Footer Design Start Hear  */
-.footer{
+.footer {
     background-color: black;
     color: white;
     padding: 20px;
     text-align: center;
     font-size: 0.8rem;
 }
-.footer-menu a{
+
+.footer-menu a {
     display: block;
     margin: 15px 0px;
     font-size: 1rem;
 }
-.footer-menu a:hover{
+
+.footer-menu a:hover {
     color: gray;
 }
-.footer::after{
+
+.footer::after {
     content: " ";
     display: table;
     clear: both;
 }
 
 /* Footer Design End Hear  */
-
