@@ -27,8 +27,35 @@
       href="desktop.css"
       media="screen and (min-width: 992px)"
     />
+    <style>
+      .scroll-top {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: transparent;
+        color: #fff;
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        border-radius: 50%;
+        z-index: 999;
+      }
+
+      /* Show only on mobile */
+      @media (max-width: 768px) {
+        .scroll-top {
+          display: block;
+        }
+      }
+    </style>
   </head>
   <body>
+    <a href="#" class="scroll-top icon-style">
+      <i class="fa fa-toggle-up"></i>
+    </a>
+
     <!-- Navbar Section Starting Hear  -->
     <div class="navbar">
       <div class="nav-logo col-2">
@@ -223,7 +250,9 @@
             <div class="skills-container">
               <ul>
                 <li class="dm"><a href="#">Digital Marketing</a></li>
-                <li class="wd"><a href="web.html" target="_blank">Web Development</a></li>
+                <li class="wd">
+                  <a href="web.html" target="_blank">Web Development</a>
+                </li>
                 <li class="mso"><a href="#">MS Office</a></li>
                 <li class="gd"><a href="#">Graphic Design</a></li>
                 <li class="eca"><a href="#">Extracurricular Activities</a></li>
@@ -253,7 +282,11 @@
           </li>
           <li>
             <p>
-              <a href="https://mdsajibrahmanantor74-cloud.github.io/CV-project/" target="_blank">Web CV</a>
+              <a
+                href="https://mdsajibrahmanantor74-cloud.github.io/CV-project/"
+                target="_blank"
+                >Web CV</a
+              >
             </p>
           </li>
         </ol>
@@ -276,7 +309,7 @@
             rows="10"
             placeholder="Text hare"
           ></textarea>
-          <button  class="btn" type="submit">SEND</button>
+          <button class="btn" type="submit">SEND</button>
           <button class="btn" type="reset">RESET</button>
         </form>
       </div>
